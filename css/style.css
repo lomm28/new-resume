@@ -3,6 +3,7 @@ div,
 ul,
 li,
 p,
+span,
 h1,
 h2,
 h3,
@@ -20,7 +21,8 @@ h6 {
 
 .education-entry,
 .work-entry,
-.project-entry {
+.project-entry,
+.imgSize {
   padding: 0 5%;
 }
 
@@ -68,6 +70,7 @@ h5 {
   color: #999;
   line-height: 16px;
   float: left;
+  padding: 0 5%;
 }
 
 .location-text {
@@ -76,6 +79,7 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
+  padding: 0 5%;
 
 }
 
@@ -152,10 +156,18 @@ a {
   padding: 2.5% 5%;
 }
 
-ul {
-  list-style-type: none;
+.imgSize {
+  height: 250px;
+  width: 400px;
 }
 
+ul, li {
+  list-style-type: none;
+}
+li {
+ font-weight: bold;
+  color: #fff;
+}
 .biopic {
   float: left;
   padding: 10px;
