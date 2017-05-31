@@ -1,0 +1,29 @@
+{
+  "name": "my_resume",
+  "version": "1.0.0",
+  "description": "This is my presonal resume containing my education, work experience, and professional skills",
+  "main": "server.js",
+  "dependencies": {
+    "d3": "^4.9.1",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lomm28/new-resume.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "skills"
+  ],
+  "author": "Dmytro Danko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lomm28/new-resume/issues"
+  },
+  "homepage": "https://github.com/lomm28/new-resume#readme"
+}
