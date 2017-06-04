@@ -22,9 +22,11 @@ const server = http.Server(app);
 const port = process.env.PORT || 8080;
 
 app.use('/', express.static(path.join(__dirname, 'testheroku')));
-app.use('/images',express.static(path.join(__dirname, 'public/images')));
-app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
-app.use('/css',express.static(path.join(__dirname, 'public/stylesheets')));
+//app.use('/images',express.static(path.join(__dirname, 'public/images')));
+//app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
+//app.use('/css',express.static(path.join(__dirname, 'public/stylesheets')));
+app.use(express.static(__dirname + '/public'));
+app.use('/static', express.static(__dirname + '/public'));
 
 server.listen(port, () => {
   console.log(`Listening on http://localhost:${port}/`);
