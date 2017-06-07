@@ -1,15 +1,3 @@
-/*var express = require('express');
-var app = express();
-
-app.get('/', function(req, res) {
-	res.sendFile(__dirname + '/index.html');
-});
-
-const port = process.env.PORT || 8080;
-app.listen(port, () => {
-  console.log('Express server listening on port', port)
-});*/
-
 'use strict';
 
 const path = require('path');
@@ -20,10 +8,6 @@ const app = express();
 const server = http.Server(app);
 
 const port = process.env.PORT || 8080;
-
-//app.use('/', express.static(path.join(__dirname, 'testheroku')));
-//app.use(express.static(__dirname + '/public'));
-//app.use('/static', express.static(__dirname + '/public'));
 
 app.use(express.static(path.join(__dirname)));
 app.use("/css", express.static(__dirname));
