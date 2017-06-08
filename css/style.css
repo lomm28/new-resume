@@ -19,6 +19,13 @@ h6 {
   overflow: auto;
 }
 
+svg {
+    display: block;
+    margin-top: -70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .education-entry,
 .work-entry,
 .project-entry,
